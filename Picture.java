@@ -16,11 +16,14 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square grass;
-    /**
+    private Circle atardecer;
+        /**
      * Constructor for objects of class Picture
      */
     public Picture()
     {
+        
+        
         // nothing to do... instance variables are automatically set to null
     }
 
@@ -34,7 +37,7 @@ public class Picture
         wall.moveVertical(20);
         wall.changeSize(120);
         wall.makeVisible();
-        
+
         window = new Square();
         window.changeColor("black");
         window.moveHorizontal(-120);
@@ -47,7 +50,7 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
-        
+
         grass = new Square();
         grass.changeColor("green");
         grass.changeSize(500);
@@ -63,6 +66,18 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         sun.slowMoveVertical(-50);
+        
+        atardecer = new Circle ();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(0);
+        sun.makeVisible();
+        sun.moveVertical(40);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical(110);
+        
+        
+        
     }
 
     /**
