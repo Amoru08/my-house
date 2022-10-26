@@ -16,7 +16,8 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square grass;
-    private Circle atardecer;
+   
+    
         /**
      * Constructor for objects of class Picture
      */
@@ -67,14 +68,6 @@ public class Picture
         sun.makeVisible();
         sun.slowMoveVertical(-50);
         
-        atardecer = new Circle ();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(0);
-        sun.makeVisible();
-        sun.moveVertical(40);
-        sun.changeSize(80);
-        sun.makeVisible();
-        sun.slowMoveVertical(110);
         
         
         
@@ -107,4 +100,22 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    
+    
+    public void atardecer()
+    
+   
+    {
+        
+        sun.slowMoveVertical(100);
+        
+            
+        }
+        
+       
+        
+       
+        
+    
 }
